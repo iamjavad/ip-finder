@@ -11,9 +11,9 @@ print('''
 
 ======================================================================
 ''')
+import socket
 host = input(str('enter domain name:'))
 def get_ip(host):
-    import socket
     print(f'ip is {socket.gethostbyname(host)}')
 
 get_ip(host)
